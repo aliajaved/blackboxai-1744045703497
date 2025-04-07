@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone - Sign In</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .signin-bg {
+            background: rgba(0, 0, 0, 0.75);
+        }
+        input {
+            background: #333;
+            color: white;
+        }
+        input:focus {
+            background: #454545;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <!-- Header -->
+    <header class="absolute w-full z-10">
+        <div class="px-12 py-6">
+            <div class="w-40">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
+            </div>
+        </div>
+    </header>
+
+    <!-- Sign In Form -->
+    <section class="min-h-screen flex items-center justify-center">
+        <div class="signin-bg p-16 rounded-md w-full max-w-md">
+            <h1 class="text-3xl font-bold mb-8">Sign In</h1>
+            <form>
+                <div class="mb-4">
+                    <input type="email" placeholder="Email or phone number" 
+                           class="w-full p-3 rounded-md mb-1">
+                </div>
+                <div class="mb-6">
+                    <input type="password" placeholder="Password" 
+                           class="w-full p-3 rounded-md">
+                </div>
+                <button type="submit" 
+                        class="w-full bg-red-600 text-white p-3 rounded-md font-semibold mb-3 hover:bg-red-700">
+                    Sign In
+                </button>
+                <div class="flex justify-between text-gray-400 text-sm">
+                    <label class="flex items-center">
+                        <input type="checkbox" class="mr-1"> Remember me
+                    </label>
+                    <a href="#" class="hover:underline">Need help?</a>
+                </div>
+            </form>
+            <div class="mt-16 text-gray-400">
+                <p>New to Netflix? <a href="#" class="text-white hover:underline">Sign up now</a>.</p>
+                <p class="text-xs mt-4">
+                    This page is protected by Google reCAPTCHA to ensure you're not a bot.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-500 py-8 px-8">
+        <div class="max-w-6xl mx-auto">
+            <p class="text-sm">© 2023 Netflix Clone</p>
+        </div>
+    </footer>
+</body>
+</html>
